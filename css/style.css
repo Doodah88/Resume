@@ -1,0 +1,51 @@
+/*
+Color Pallette:
+dark blue: #25283d
+salmon: #e85f5c
+raspberry: #773344
+light raspberry: #cc9faa
+pink beige: #e3b5a4
+snow purple: #f2f7f2
+light blue: bcc2e7
+*/
+
+/* Global styles
+-----------------------*/
+
+body {
+   font-family: sans-serif;
+   line-height: 150%;
+}
+
+a {
+    color: pink;  
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* header / footer
+-----------------------*/
+
+header, footer {
+    background: #25283d;
+    color: #f2f7f2;
+}
+
+.work {
+    background: #e3b5a4;
+}
+
+.education {
+    background: #aec1ff;
+}
+
+header h1, header h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
