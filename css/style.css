@@ -12,17 +12,38 @@ light blue: bcc2e7
 /* Global styles
 -----------------------*/
 
+html {
+    box-sizing: border-box; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit 
+}
+
 body {
    font-family: sans-serif;
    line-height: 150%;
+   margin: 0;
 }
 
-a {
-    color: pink;  
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: auto;
 }
 
-a:hover {
-    text-decoration: none;
+.col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+    min-height: 175px;
+}
+
+.col-narrow {
+    width: 30%;
+    float: left;
+    min-height: 175px;
 }
 
 /* header / footer
@@ -33,6 +54,24 @@ header, footer {
     color: #f2f7f2;
 }
 
+/* header
+-----------------------*/
+
+header h1, header h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* sections
+-----------------------*/
 .work {
     background: #e3b5a4;
 }
@@ -41,11 +80,20 @@ header, footer {
     background: #aec1ff;
 }
 
-header h1, header h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+/* footer
+-----------------------*/
+footer {
     text-align: center;
 }
 
-h1 {
-    font-size: 50px;
+a {
+    color: rgb(226, 97, 118);
+    background: white;
+    padding: 5px;
+    margin: 10px;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
 }
