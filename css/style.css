@@ -29,7 +29,7 @@ body {
 .content-wrap {
     max-width: 950px;
     margin: 0 auto;
-    padding: 50px;
+    padding: 60px 50px;
     overflow: auto;
 }
 
@@ -37,13 +37,19 @@ body {
     width: 70%;
     float: left;
     padding-left: 20px;
-    min-height: 175px;
 }
 
 .col-narrow {
     width: 30%;
     float: left;
-    min-height: 175px;
+}
+
+h3 {
+    margin: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
 
 /* header / footer
@@ -52,6 +58,29 @@ body {
 header, footer {
     background: #25283d;
     color: #f2f7f2;
+}
+
+header {
+    padding-top: 50px;
+}
+
+/* nav
+-----------------------*/
+nav {
+    text-align: center;
+    position: fixed;
+    background: white;
+    top: 0;
+    width: 100%;
+}
+
+nav a {
+    display: inline-block;
+    padding: 5px 10px;
+    background: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700px;
 }
 
 /* header
@@ -76,8 +105,29 @@ h2 {
     background: #e3b5a4;
 }
 
+.job-descript p:first-of-type {
+    margin-top: 0;
+}
+
+.job-descript ul:first-of-type {
+    margin-top: 0;
+}
+
+.job-descript {
+    margin-bottom: 25px;
+}
+
 .education {
     background: #aec1ff;
+}
+
+p + h3 {
+    margin-top: 30px;
+}
+
+
+h3 ~ p {
+    margin: 0;
 }
 
 /* footer
