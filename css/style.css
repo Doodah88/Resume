@@ -52,6 +52,14 @@ h3 {
     text-transform: uppercase;
 }
 
+.btn {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    background: rgb(226, 97, 118);
+}
+
 /* header / footer
 -----------------------*/
 
@@ -62,6 +70,13 @@ header, footer {
 
 header {
     padding-top: 50px;
+    position: relative;
+}
+
+.download {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 /* nav
@@ -77,10 +92,12 @@ nav {
 nav a {
     display: inline-block;
     padding: 5px 10px;
+    margin: 10px;
     background: none;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700px;
+    color: rgb(226, 97, 118);
 }
 
 /* header
@@ -118,8 +135,22 @@ h2 {
 }
 
 .education {
-    background: #aec1ff;
-}
+    background: 
+      linear-gradient(
+        rgba(70, 106, 224, 0.3), 
+        rgba(70, 106, 224, 0.3)
+      ),
+      url(https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
+      no-repeat fixed;
+  }
+
+/*
+.education {
+    background-image: url(https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: rgba(70, 106, 224, 0.2);
+} */
 
 p + h3 {
     margin-top: 30px;
@@ -136,12 +167,12 @@ footer {
     text-align: center;
 }
 
-a {
-    color: rgb(226, 97, 118);
-    background: white;
+footer a {
+    color:  #e3b5a4;
     padding: 5px;
     margin: 10px;
     display: inline-block;
+    font-size: 50px;
 }
 
 a:hover {
