@@ -27,21 +27,30 @@ body {
 }
 
 .content-wrap {
-    max-width: 950px;
+    max-width: 1010px;
     margin: 0 auto;
     padding: 60px 50px;
     overflow: auto;
 }
 
 .col-wide {
-    width: 70%;
+    width: 65%;
     float: left;
     padding-left: 20px;
+    padding-top: 20px;
 }
 
 .col-narrow {
-    width: 30%;
+    width: 35%;
     float: left;
+    padding-top: 20px;
+}
+
+.col-none {
+    width: 100%;
+    display: inline-block;
+    text-align: justify;
+    border-bottom: 10px solid #773344;
 }
 
 h3 {
@@ -107,9 +116,13 @@ header h1, header h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
 h1 {
     font-size: 50px;
+}
+
+.work h2 {
+    margin-top: 0;
+    border-bottom: 10px solid #773344;
 }
 
 h2 {
@@ -131,7 +144,7 @@ h2 {
 }
 
 .job-descript {
-    margin-bottom: 25px;
+    margin-bottom: 0;
 }
 
 .education {
@@ -178,5 +191,21 @@ a:hover {
 
     .profile-img {
         width: 200px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    p, li {
+        font-size: .8em
     }
 }
