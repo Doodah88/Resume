@@ -1,0 +1,218 @@
+/*
+Color Pallette:
+dark blue: #25283d
+salmon: #e85f5c
+raspberry: #773344
+light raspberry: #cc9faa
+pink beige: #e3b5a4
+snow purple: #f2f7f2
+light blue: #bcc2e7
+*/
+
+/* Global styles
+-----------------------*/
+
+html {
+    box-sizing: border-box; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit 
+}
+
+body {
+   font-family: sans-serif;
+   line-height: 150%;
+   margin: 0;
+}
+
+.content-wrap {
+    max-width: 1010px;
+    margin: 0 auto;
+    padding: 60px 50px;
+    overflow: auto;
+}
+
+.col-wide {
+    width: 65%;
+    float: left;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.col-narrow {
+    width: 35%;
+    float: left;
+    padding-top: 20px;
+}
+
+.col-none {
+    width: 100%;
+    display: inline-block;
+    text-align: justify;
+    border-bottom: 10px solid #773344;
+}
+
+h3 {
+    margin: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    background: rgb(226, 97, 118);
+}
+
+/* header / footer
+-----------------------*/
+
+header, footer {
+    background: #25283d;
+    color: #f2f7f2;
+}
+
+header {
+    padding-top: 50px;
+    position: relative;
+}
+
+.profile-img {
+    border: white solid 10px;
+    padding-top: 0px;
+}
+
+.download {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* nav
+-----------------------*/
+nav {
+    text-align: center;
+    position: fixed;
+    background: white;
+    top: 0;
+    width: 100%;
+}
+
+nav a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 10px;
+    background: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700px;
+    color: rgb(226, 97, 118);
+}
+
+/* header
+-----------------------*/
+
+header h1, header h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    color: #bcc2e7;
+}
+
+.work h2 {
+    margin-top: 0;
+    border-bottom: 10px solid #773344;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* sections
+-----------------------*/
+.work {
+    background: #e3b5a4;
+}
+
+.job-descript p:first-of-type {
+    margin-top: 0;
+}
+
+.job-descript ul:first-of-type {
+    margin-top: 0;
+}
+
+.job-descript {
+    margin-bottom: 0;
+}
+
+
+.education {
+    background: 
+      linear-gradient(
+        rgba(70, 106, 224, 0.3), 
+        rgba(70, 106, 224, 0.3)
+      ),
+      url(https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
+      no-repeat fixed;
+  }
+
+p + h3 {
+    margin-top: 30px;
+}
+
+
+h3 ~ p {
+    margin: 0;
+}
+
+/* footer
+-----------------------*/
+footer {
+    text-align: center;
+}
+
+footer a {
+    color:  #e3b5a4;
+    padding: 5px;
+    margin: 10px;
+    display: inline-block;
+    font-size: 50px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* media queries
+-----------------------*/
+
+@media screen and (max-width: 899px) {
+
+    .profile-img {
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    p, li {
+        font-size: .8em
+    }
+}
